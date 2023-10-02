@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
     <title>Mike Timms - Actor Portfolio</title>
 </head>
 
@@ -12,19 +15,55 @@
     <header>
         <h1 class="name">MIKE TIMMS</h1>
         <nav class="menu">
-            <button>BIO</button>
-            <button>SHOWREEL</button>
-            <button>PHOTOS</button>
-            <button>CONTACT</button>
+            <ul class="menu_cont">
+                <li class="menu-item"><a href="#bio">BIO</a></li>
+                <li class="menu-item"><a href="#showreel">SHOWREEL</a></li>
+                <li class="menu-item"><a href="#photos">PHOTOS</a></li>
+                <li class="menu-item"><a href="#contact">CONTACT</a></li>
+            </ul>
         </nav>
         <img class="mainpic" src="img/Mike_Timms_068.jpg" alt="Portrait of White Man in his 70's">
 
     </header>
 
-    <section class="bio">BIO</section>
-    <section class="showreel">SHOWREEL</section>
-    <section class="photos">PHOTOS</section>
-    <section class="contact">CONTACT</section>
+    <section class="bio" id="bio">
+        <h1 class="section_header">About Me</h1>
+
+        <article class="section_content">
+        <p>
+Having spent fifty six years living and working on the island of Ireland - I still speak with a posh
+English accent. I came to study at Trinity College, Dublin in the 60s, and never left.</p>
+
+<p>I've worked in a variety of jobs and come to acting later in life via academia where, as a lecturer in
+UCD, I learned performance skills were essential for communication with an audience.</p>
+<p>Having written and performed a one man show, which went to Edinburgh via the Dublin and
+Windsor Fringes in the 1990s, I trained in the Meisner Technique and have been pursuing acting
+work since then.</p>
+    </article>
+    </section>
+
+
+    <section class="showreel" id="showreel">
+        <h1 class="section_header">Showreel</h1>
+        <article class="section_content">
+
+            <iframe src="https://player.vimeo.com/video/133572537?h=b7e0d932f2" width="1080px" height="720px" frameborder="0" allow="autoplay; fullscreen;" allowfullscreen></iframe>
+
+        </article>
+    </section>
+
+    <section class="photos" id="photos">
+        <h1 class="section_header">Photos</h1>
+        <article class="section_content"></article>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="section_header">Contact</h1>
+        <article class="section_content">
+            <p>michael.timms@ucd.ie</p>
+            <p>https://www.imdb.com/name/nm6287398/</p>
+        </article>
+    </section>
 
 
 </body>
