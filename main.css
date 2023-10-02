@@ -5,19 +5,23 @@
 }
 
 body {
-    background-color: rgb(96, 0, 0);
+    background-color: rgb(17, 22, 22);
     display: grid;
-    grid-template-columns: 1fr 25fr 1fr;
+    grid-template-columns: 0fr 30fr 0fr;
     grid-template-rows: repeat(5, 100vh);
     font-family: 'Noto Serif Bengali', serif;
     font-size: 2.4rem;
-    color: #0c0c0c;
+    color: #ffffff;
 }
 
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+a:hover, a:focus {
+    border-bottom: 2px solid
 }
 
 ul {
@@ -31,7 +35,7 @@ p {
 }
 
 header {
-    background-color: blueviolet;
+    background-color: rgb(25, 33, 33);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
@@ -47,6 +51,8 @@ img {
 h1 {
     font-size: 2.9rem;
     text-align: center;
+    word-spacing: 1px; 
+    letter-spacing:3px;
 }
 
 html {
@@ -56,7 +62,7 @@ html {
 
 /* header and menu */
 .menu {
-    background-color: rgb(110, 63, 2);
+    /* background-color: rgb(110, 63, 2); */
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     justify-self: center;
@@ -64,24 +70,26 @@ html {
 }
 
 .menu_cont {
+    padding: 2vw;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    justify-content: space-around;
+    justify-content:center;
     grid-template-rows: 1fr;
 }
 
 .menu-item {
     place-self: center;
-    background-color: crimson;
+    /* background-color: crimson; */
     padding: 2.4vw;
 }
 
 .name {
-    background-color: rgb(255, 145, 0);
+    /* background-color: rgb(255, 145, 0); */
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     justify-self: center;
     align-self: center;
+   
 }
 
 .mainpic {
@@ -95,7 +103,8 @@ html {
 /* content */
 
 .bio {
-    background-color: chartreuse;
+    background-color: rgb(196, 210, 200);
+    color: black;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     justify-self: stretch;
@@ -106,7 +115,8 @@ html {
 }
 
 .showreel {
-    background-color: rgb(0, 162, 255);
+    background-color: rgb(17, 22, 22);
+    color: rgb(255, 255, 255);
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     justify-self: stretch;
@@ -116,7 +126,8 @@ html {
 }
 
 .photos {
-    background-color: rgb(96, 30, 195);
+    background-color: rgb(49, 59, 58);
+    color:#ffffff;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     justify-self: stretch;
@@ -126,7 +137,8 @@ html {
 }
 
 .contact {
-    background-color: chartreuse;
+    background-color: rgb(175, 196, 181);
+    color: black;
     grid-column: 2 / 3;
     grid-row: 5 / 6;
     justify-self: stretch;
