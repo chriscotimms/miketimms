@@ -4,14 +4,22 @@
     margin: 0;
 }
 
+@font-face { 
+    font-family: "sansita"; 
+    src: url("fonts/PublicSans-Medium.woff"); 
+  } 
+
 body {
     background-color: rgb(17, 22, 22);
     display: grid;
     grid-template-columns: 0fr 30fr 0fr;
-    grid-template-rows: repeat(5, 100vh);
-    font-family: 'Noto Serif Bengali', serif;
-    font-size: 2.4rem;
+    grid-template-rows: repeat(1, 100vh) repeat(4, minmax(100vh, auto)) ;
+    font-family: 'sansita', serif;
+    font-size: 2.3em;
     color: #ffffff;
+    line-height: 1.7em;
+    word-spacing: 0.05em;
+    
 }
 
 
@@ -30,29 +38,39 @@ ul {
 }
 
 p {
-    padding-bottom: 1.1rem;
-    font-size: 1.9rem;
+    padding-bottom: 1.9rem;
+    font-size: 2.6rem;
 }
 
 header {
-    background-color: rgb(25, 33, 33);
+    /* background-color: rgb(25, 33, 33); */
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    background: rgba(29,63,63,1);
+background: -moz-linear-gradient(left, rgba(29,63,63,1) 0%, rgba(39,74,82,1) 36%, rgba(41,76,86,1) 44%, rgba(41,76,86,1) 74%, rgba(30,61,72,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(29,63,63,1)), color-stop(36%, rgba(39,74,82,1)), color-stop(44%, rgba(41,76,86,1)), color-stop(74%, rgba(41,76,86,1)), color-stop(100%, rgba(30,61,72,1)));
+background: -webkit-linear-gradient(left, rgba(29,63,63,1) 0%, rgba(39,74,82,1) 36%, rgba(41,76,86,1) 44%, rgba(41,76,86,1) 74%, rgba(30,61,72,1) 100%);
+background: -o-linear-gradient(left, rgba(29,63,63,1) 0%, rgba(39,74,82,1) 36%, rgba(41,76,86,1) 44%, rgba(41,76,86,1) 74%, rgba(30,61,72,1) 100%);
+background: -ms-linear-gradient(left, rgba(29,63,63,1) 0%, rgba(39,74,82,1) 36%, rgba(41,76,86,1) 44%, rgba(41,76,86,1) 74%, rgba(30,61,72,1) 100%);
+background: linear-gradient(to right, rgba(29,63,63,1) 0%, rgba(39,74,82,1) 36%, rgba(41,76,86,1) 44%, rgba(41,76,86,1) 74%, rgba(30,61,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d3f3f', endColorstr='#1e3d48', GradientType=1 );
 }
 
 img {
     height:100%;
     object-fit: cover;
+   
 }
 
 h1 {
-    font-size: 2.9rem;
+    font-size: 3.2rem;
     text-align: center;
     word-spacing: 1px; 
     letter-spacing:3px;
+    padding: 1em;
 }
 
 html {
@@ -81,6 +99,7 @@ html {
     place-self: center;
     /* background-color: crimson; */
     padding: 2.4vw;
+    font-size: 1.15em;
 }
 
 .name {
@@ -89,6 +108,9 @@ html {
     grid-row: 2 / 3;
     justify-self: center;
     align-self: center;
+    text-shadow: 0px 2px 0px rgba(13, 30, 30, 1);
+    letter-spacing:4px;
+    font-size: 1.6em;
    
 }
 
@@ -98,7 +120,14 @@ html {
     grid-row: 1 / 5;
 }
 
+img.mainpic  {
+        box-shadow: 30px 0px 50px rgba(7, 14, 14, 0.1), -30px 0px 50px rgba(7, 14, 14, 0.1);
+    }
 
+.photos img {
+    margin: 2em;
+    box-shadow: 30px 0px 50px rgba(7, 14, 14, 0.1), -30px 0px 50px rgba(7, 14, 14, 0.1);
+}
 
 /* content */
 
@@ -126,15 +155,17 @@ html {
 }
 
 .photos {
-    background-color: rgb(49, 59, 58);
+    background-color: rgb(75, 90, 88);
     color:#ffffff;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     justify-self: stretch;
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    height: auto;
 }
+
 
 .contact {
     background-color: rgb(175, 196, 181);
@@ -189,3 +220,7 @@ html {
     justify-self: center;
     align-self: start;
 }
+
+
+
+        
